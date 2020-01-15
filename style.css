@@ -2,7 +2,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: teal;
+    background: #f9f9f9;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -10,10 +10,37 @@ body {
     padding:: 150px;
 }
 
+.list {
+    width: 500px;
+}
+
 input[type=text] {
+    width: 50%;
+    font-size: 16px;
+    height: 30px;
     color: gold;
     background: blue;
     padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 15px 3px -7px #ddd;
+    transition: all 0.3s;
+}
+
+input[type=text]:hover, input[type=text]:focus {
+    box-shadow: 0px 10px 3px -5px #aaa;
+    transition: all 0.3s;
+}
+
+.container {
+    margin: 120px 0 0 120px;
+}
+
+::placeholder {
+    position: relative;
+    color: #fafafa;
+    opacity: 0.75;
+    transition: all 0.3s;
 }
 
 .delete-button {
