@@ -1,6 +1,11 @@
 // add item
-function addToDo(item) {
+function addToDo() {
     const input = document.querySelector("input[type=text]");
+
+    if (!input.value) {
+        return;
+    }
+
     const list = document.querySelector('ul');
     const li = document.createElement('li');
     
