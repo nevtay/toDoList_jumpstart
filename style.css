@@ -1,0 +1,21 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: teal;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:: 150px;
+}
+
+input[type=text] {
+    color: gold;
+    background: blue;
+    padding: 10px;
+}
+
+.delete-button {
+    background: red;
+}
